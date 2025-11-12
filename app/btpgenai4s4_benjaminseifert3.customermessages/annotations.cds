@@ -83,7 +83,18 @@ annotate service.CustomerMessage with @(
                 Label : 'S4HCP_ServiceOrder_ServiceOrder',
             },
         ],
-    }
+    },
+    UI.Identification : [
+        {
+            $Type : 'UI.DataField',
+            Value : customerMessageID,
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'bTPGenAI4S4_BenjaminSeifert3Srv.Action1',
+            Label : 'Generate Reply',
+        },
+    ],
 );
 
 annotate service.CustomerMessage with {
