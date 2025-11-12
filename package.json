@@ -27,7 +27,8 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-btpgenai4s4_benjaminseifert3.customermessages": "cds watch --open btpgenai4s4_benjaminseifert3.customermessages/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-btpgenai4s4_benjaminseifert3.customermessages": "cds watch --open btpgenai4s4_benjaminseifert3.customermessages/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-btpgenai4s4_benjaminseifert3.productfaqapp": "cds watch --open btpgenai4s4_benjaminseifert3.productfaqapp/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "private": true,
   "cds": {
@@ -59,6 +60,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/btpgenai4s4_benjaminseifert3.customermessages"
+    "app/btpgenai4s4_benjaminseifert3.customermessages",
+    "app/btpgenai4s4_benjaminseifert3.productfaqapp"
   ]
 }
