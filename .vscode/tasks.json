@@ -64,7 +64,11 @@
       "command": "npx",
       "args": [
         "dev-cap-tools",
-        "gen-entrypoint"
+        "gen-entrypoint",
+        "--ui5version",
+        "1.142.0",
+        "--ui5theme",
+        "sap_horizon"
       ],
       "dependsOn": [
         "BuildMDK",
