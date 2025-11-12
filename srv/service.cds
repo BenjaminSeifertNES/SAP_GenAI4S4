@@ -7,14 +7,17 @@ service bTPGenAI4S4_BenjaminSeifert3Srv {
             @odata.draft.enabled
     entity CustomerMessage as projection on my.CustomerMessage
         actions {
+            @cds.odata.bindingparameter.name: '_it'
+            @Common.SideEffects             : {TargetProperties: [
+                '_it/suggestedResponseEnglish',
+                '_it/suggestedResponseCustomerLanguage'
+            ]}
+            action Action1();
             @(
                 cds.odata.bindingparameter.name: '_it',
-                Common.SideEffects             : {TargetProperties: [
-                    '_it/suggestedResponseEnglish',
-                    '_it/suggestedResponseCustomerLanguage'
-                ]}
+                Common.SideEffects             : {TargetProperties: ['_it/S4HCP_ServiceOrder_ServiceOrder']}
             )
-            action Action1();
+            action Action2();
         };
 
     @cds.redirection.target
